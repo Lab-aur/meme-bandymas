@@ -1,0 +1,20 @@
+
+<mat-card>
+  <mat-form-field>
+    <input matInput type="text" [(ngModel)]="TopText" placeholder="Top text" maxlength="35">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="text" [(ngModel)]="BottomText" placeholder="Bottom text" maxlength="35">
+    </mat-form-field>
+</mat-card>
+
+<mat-card class="example-card">
+      <img class="responsive" mat-card-image src="assets/img/cant.png">
+      <p class="absolute-top-text" cdkDragBoundary=".example-card">{{TopText}}</p>
+      <p class="absolute-bottom-text" cdkDragBoundary=".example-card">{{BottomText}}</p>
+</mat-card>
+
+
+
+
+
